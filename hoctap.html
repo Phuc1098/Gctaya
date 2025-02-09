@@ -5,6 +5,222 @@
     <meta charset="UTF-8">
     <title>Trang Chủ - Giới Thiệu Về tổ 2 của chúng emm</title>
     <link rel="stylesheet" href="style.css">
+</style>
+  /* Header - */
+header {
+    background: linear-gradient(45deg, #ff6b6b, #556270);
+    color: bisque;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 2s ease-out;
+}
+
+
+header p {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.9; 
+    animation: fadeIn 2s ease-in-out 1s; 
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Chia ảnh thành 2x2 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-gap: 15px; /* Khoảng cách giữa ảnh */
+    max-width: 600px; /* Giới hạn chiều rộng */
+    margin-top:20px; /* Căn giữa */
+}
+
+/* Ảnh - Bo tròn & Đổ bóng */
+.gallery img {
+    width: 100%; /* Ảnh co giãn theo ô */
+    height: auto;
+    border-radius: 15px; /* Bo tròn góc */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng phóng to khi hover */
+.gallery img:hover {
+    transform: scale(1.2); /* Phóng to nhẹ */
+}
+/* Nền cho tất cả các thẻ <p> */
+p {
+    background-color: #f0f8ff; /* Màu nền nhẹ, dễ chịu */
+    padding: 15px; /* Khoảng cách giữa nội dung và viền nền */
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho phần nội dung */
+    font-size: 1.1rem; /* Cỡ chữ đẹp và dễ đọc */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng chữ */
+    margin: 10px 0; /* Khoảng cách giữa các đoạn văn */
+    color: #333; /* Màu chữ tối để dễ đọc */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+}
+
+/* Hiệu ứng phóng to khi hover */
+p:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+body {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fc6076);
+    background-size: 400% 400%;
+    animation: gradientBG 5s linear infinite;
+}
+
+/* Animation giúp gradient di chuyển */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Phần chỉnh sửa nền cho đoạn văn "Những Hình Ảnh Của Tổ 2" trong nav mà không thay đổi HTML */
+ p {
+    display: inline-block; /* Thay đổi từ block sang inline-block để tự động co theo nội dung */
+    padding: 15px; /* Khoảng cách giữa nội dung và viền nền */
+    background-color: #f0f8ff; /* Màu nền nhẹ, dễ chịu */
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho phần nội dung */
+    font-size: 1.1rem; /* Cỡ chữ đẹp và dễ đọc */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng chữ */
+    color: #333; /* Màu chữ tối để dễ đọc */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+}
+
+ p:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+/* Phần chỉnh sửa nền cho đoạn văn "Những Hình Ảnh Của Tổ 2" trong nav */
+p {
+    display: inline-block; /* Đảm bảo phần tử co giãn theo nội dung */
+    padding: 15px; /* Khoảng cách giữa nội dung và viền nền */
+    background-color: #f0f8ff; /* Màu nền nhẹ, dễ chịu */
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho phần nội dung */
+    font-size: 1.3rem; /* Tăng kích thước chữ */
+    font-weight: bold; /* Làm chữ đậm */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng chữ */
+    color: #000000; /* Màu chữ đen đậm */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+}
+
+/* Hiệu ứng phóng to khi hover */
+p:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+/* Đảm bảo mỗi ảnh có một vùng chứa riêng */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Các Sticker sẽ được chèn vào vị trí cụ thể */
+.sticker {
+    position: absolute;
+    width: 40px; /* Kích thước của sticker */
+    height: 40px; /* Kích thước của sticker */
+    background-size: cover;
+    background-position: center;
+    z-index: 10; /* Đảm bảo sticker nằm trên ảnh */
+}
+
+/* Đặt các sticker với ảnh khác nhau */
+.sticker1 {
+    background-image: url('book (1).png'); /* Sticker 1 */
+    top: 10px;
+    left: 10px;
+}
+
+.sticker2 {
+    background-image: url('butterfly.png'); /* Sticker 2 */
+    top: 40px;
+    left: 80px;
+}
+
+.sticker3 {
+    background-image: url('paper-plane (1).png'); /* Sticker 3 */
+    top: 100px;
+    left: 50px;
+}
+
+.sticker4 {
+    background-image: url('strawberry-milk.png'); /* Sticker 4 */
+    top: 150px;
+    left: 120px;
+}
+
+.sticker5 {
+    background-image: url('smile.png'); /* Sticker 5 */
+    top: 50px;
+    left: 150px;
+}
+
+/* Chia ảnh thành 2 cột */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-gap: 15px; /* Khoảng cách giữa ảnh */
+    margin-top: 20px; /* Căn giữa */
+}
+/* Căn giữa bảng */
+table {
+    margin: 20px auto; /* Căn giữa bảng */
+    width: 80%; /* Điều chỉnh độ rộng của bảng */
+    border-collapse: collapse; /* Gộp các đường viền */
+}
+
+/* Thiết kế bảng */
+table, th, td {
+    border: 1px solid #000; /* Đường viền cho bảng */
+}
+
+th, td {
+    padding: 10px; /* Khoảng cách bên trong các ô */
+    text-align: center; /* Căn giữa chữ trong bảng */
+}
+
+th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+}
+
+/* Thêm các hiệu ứng khi hover trên các hàng */
+tr:hover {
+    background-color: #f9f9f9; /* Màu nền thay đổi khi hover */
+}
+</style>
 </head>
 <body>
   <header>
